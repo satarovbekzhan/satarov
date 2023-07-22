@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dictionary = await getDictionary(params.lang);
   return {
     title: dictionary.root.title,
+    description: dictionary.root.description,
   };
 }
 
