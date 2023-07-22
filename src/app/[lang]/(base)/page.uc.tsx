@@ -94,6 +94,7 @@ export default function Home({
                   boxSize={10}
                   _hover={{ opacity: 0.8 }}
                   transition={"opacity 0.2s ease-in-out"}
+                  loading={"lazy"}
                 />
               </Link>
             ))
@@ -129,6 +130,7 @@ export default function Home({
           position={"absolute"}
           top={0}
           left={0}
+          loading={"lazy"}
         />
       </Box>
     </Stack>

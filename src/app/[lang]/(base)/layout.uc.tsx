@@ -79,7 +79,13 @@ export default function BaseLayout({
                 as={Button}
                 variant={{ base: "outline", md: "ghost" }}
                 textTransform={"uppercase"}
-                leftIcon={<Image src={getFlagImageLink(lang)} alt={lang} />}
+                leftIcon={
+                  <Image
+                    src={getFlagImageLink(lang)}
+                    alt={lang}
+                    loading={"lazy"}
+                  />
+                }
               >
                 {languageNames[lang]}
               </MenuButton>
@@ -98,7 +104,11 @@ export default function BaseLayout({
                         href={pathname.replace(lang, locale)}
                         fontSize={"xl"}
                         icon={
-                          <Image src={getFlagImageLink(locale)} alt={locale} />
+                          <Image
+                            src={getFlagImageLink(locale)}
+                            alt={locale}
+                            loading={"lazy"}
+                          />
                         }
                         rounded={"sm"}
                         px={3}
