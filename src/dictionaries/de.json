@@ -4,9 +4,11 @@
     "title": "Bekzhan Satarov"
   },
   "home": {
-    "title": "Hauptseite - Bekzhan Satarov"
+    "title": "Hauptseite - Bekzhan Satarov",
+    "bio": "Hallo! Ich bin Bekzhan, ein engagierter Full Stack Entwickler, der es liebt, innovative Ideen in die Realität umzusetzen. Ob es sich um ein spannendes Startup-Konzept, eine E-Commerce-App oder eine fesselnde persönliche Website handelt, ich stehe bereit, es Wirklichkeit werden zu lassen.\n\nAbseits des Codierens bin ich auch ein begeisterter Gesprächspartner. Gerne können wir uns über das Leben, Fußball oder tiefgründige philosophische Themen austauschen.\n\nAlso, schau dich gerne um, erkunde meine Projekte und zögere nicht, Kontakt aufzunehmen, wenn du Interesse an einer Zusammenarbeit hast oder einfach nur plaudern möchtest."
   },
   "blog": {
-    "title": "Blog - Bekzhan Satarov"
+    "title": "Blog - Bekzhan Satarov",
+    "text": "Ich bin kein Blogger 😕"
   }
 }

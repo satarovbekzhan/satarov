@@ -4,4 +4,5 @@ export default {
   useSystemColorMode: false,
   initialColorMode: "light",
   cssVarPrefix: "ui",
+  disableTransitionOnChange: false,
 } as ThemeConfig;

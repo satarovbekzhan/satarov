@@ -2,7 +2,6 @@ import { mode, Styles } from "@chakra-ui/theme-tools";
 
 export default {
   global: (props) => ({
-    ":root": {},
     "*": {
       scrollBehavior: "smooth",
     },

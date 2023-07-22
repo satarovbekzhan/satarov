@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import { i18n, Locale } from "@/utils/i18n-config";
 import { getDictionary } from "@/utils/get-dictionary";
 
-import RootLayoutUC from "./layout.uc";
+import LangLayoutUC from "./layout.uc";
 
 type Props = {
   params: { lang: Locale };
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function RootLayout({
+export default async function LangLayout({
   children,
   params,
 }: {
@@ -39,7 +39,7 @@ export default async function RootLayout({
       <body
         style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
       >
-        <RootLayoutUC cookies={cookies}>{children}</RootLayoutUC>
+        <LangLayoutUC cookies={cookies}>{children}</LangLayoutUC>
       </body>
     </html>
   );

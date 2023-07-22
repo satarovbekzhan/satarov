@@ -4,13 +4,14 @@ import {
   ChakraProvider,
   cookieStorageManagerSSR,
   localStorageManager,
+  ColorModeScript,
 } from "@chakra-ui/react";
 import { CacheProvider } from "@chakra-ui/next-js";
 import NextTopLoader from "nextjs-toploader";
 
 import theme from "@/theme";
 
-export default function RootLayout({
+export default function LangLayout({
   children,
   cookies,
 }: {
@@ -25,7 +26,8 @@ export default function RootLayout({
   return (
     <CacheProvider>
       <ChakraProvider theme={theme} colorModeManager={colorModeManager}>
-        <NextTopLoader color={"#000"} showSpinner={false} height={1} />
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+        <NextTopLoader color={"red"} showSpinner={false} height={1} />
         {children}
       </ChakraProvider>
     </CacheProvider>

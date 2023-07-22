@@ -4,9 +4,11 @@
     "title": "Bekzhan Satarov"
   },
   "home": {
-    "title": "Home - Bekzhan Satarov"
+    "title": "Home - Bekzhan Satarov",
+    "bio": "Hey there! I'm Bekzhan, a dedicated Full Stack Developer who loves transforming innovative ideas into reality. Whether it's an exciting startup concept, an e-commerce app, or a captivating personal website, I'm here to make it happen.\n\nBeyond coding, I'm also an avid conversationalist. Feel free to chat with me about life, football, or dive into thought-provoking discussions on philosophy.\n\nSo, take a look around, explore my projects, and don't hesitate to connect if you'd like to collaborate or just have a chat.."
   },
   "blog": {
-    "title": "Blog - Bekzhan Satarov"
+    "title": "Blog - Bekzhan Satarov",
+    "text": "I am not a blogger 😕"
   }
 }
