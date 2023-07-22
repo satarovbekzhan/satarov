@@ -64,13 +64,15 @@ export default function BaseLayout({
               variant={{ base: "outline", md: "ghost" }}
               color={pathname.includes("/blog") ? "blue.500" : undefined}
             >
-              BLOG
+              {dictionary.root.blog}
             </Button>
             <Button
               variant={{ base: "outline", md: "ghost" }}
               onClick={toggleColorMode}
             >
-              {colorMode === "light" ? "DARK" : "LIGHT"}
+              {colorMode === "light"
+                ? dictionary.root.dark
+                : dictionary.root.light}
             </Button>
             <Menu autoSelect={false}>
               <MenuButton

@@ -1,7 +1,10 @@
 {
   "name": "Bekzhan",
   "root": {
-    "title": "Bekzhan Satarov"
+    "title": "Bekzhan Satarov",
+    "blog": "BLOG",
+    "light": "LIGHT",
+    "dark": "DARK"
   },
   "home": {
     "title": "Home - Bekzhan Satarov",
