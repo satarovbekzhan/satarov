@@ -142,8 +142,8 @@ export default function Home({
           <Image
             src={astronautPic}
             alt={"Astronaut"}
-            // objectFit={"contain"}
             loading={"lazy"}
+            quality={50}
           />
         </Box>
       </Box>
