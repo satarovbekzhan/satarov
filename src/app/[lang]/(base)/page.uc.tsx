@@ -2,11 +2,11 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Box,
   Flex,
   Highlight,
-  Image,
   Stack,
   Text,
   useColorModeValue as mode,
@@ -15,6 +15,12 @@ import {
 import { motion } from "framer-motion";
 
 import { getDictionary } from "@/utils/get-dictionary";
+
+import linkedinLogo from "../../../../public/static/linkedin.png";
+import telegramLogo from "../../../../public/static/telegram.png";
+import instagramLogo from "../../../../public/static/instagram.png";
+import githubLogo from "../../../../public/static/github.png";
+import astronautPic from "../../../../public/static/astronaut-cropped.webp";
 
 const astronautAnimationKeyframes = keyframes`
   0% {
@@ -34,22 +40,22 @@ const socials = [
   {
     link: "https://www.linkedin.com/in/satarovbekzhan/",
     alt: "Linkedin",
-    url: "/static/linkedin.png",
+    url: linkedinLogo,
   },
   {
     link: "https://t.me/satarovbekzhan",
     alt: "Telegram",
-    url: "/static/telegram.png",
+    url: telegramLogo,
   },
   {
     link: "https://www.instagram.com/satarovbekzhan/",
     alt: "Instagram",
-    url: "/static/instagram.png",
+    url: instagramLogo,
   },
   {
     link: "https://github.com/satarovbekzhan",
     alt: "GitHub",
-    url: "/static/github.png",
+    url: githubLogo,
   },
 ];
 
@@ -84,19 +90,23 @@ export default function Home({
             {dictionary.home.bio}
           </Highlight>
         </Text>
-        <Flex gap={{ base: 3, md: 6 }}>
+        <Flex
+          gap={{ base: 3, md: 6 }}
+          justify={{ base: "space-between", md: "flex-start" }}
+        >
           {React.Children.toArray(
             socials.map(({ alt, url, link }) => (
-              <Link href={link} target="_blank" rel="noreferrer">
-                <Image
-                  src={url}
-                  alt={alt}
-                  boxSize={10}
-                  _hover={{ opacity: 0.8 }}
-                  transition={"opacity 0.2s ease-in-out"}
-                  loading={"lazy"}
-                />
-              </Link>
+              <Box
+                as={Link}
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                boxSize={10}
+                _hover={{ opacity: 0.8 }}
+                transition={"opacity 0.2s ease-in-out"}
+              >
+                <Image src={url} alt={alt} loading={"lazy"} />
+              </Box>
             ))
           )}
           <Box
@@ -111,7 +121,6 @@ export default function Home({
               <img
                 src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg"
                 alt="DigitalOcean Referral Badge"
-                // style={{ height: "100%", width: "auto" }}
                 style={{
                   height: "2.5rem",
                   width: "auto",
@@ -123,17 +132,20 @@ export default function Home({
         </Flex>
       </Stack>
       <Box width={{ base: 0, md: "30%" }} position={"relative"}>
-        <Image
-          as={motion.img}
+        <Box
+          as={motion.div}
           animation={animation}
-          src={"/static/astronaut-cropped.webp"}
-          alt={"Astronaut"}
-          objectFit={"contain"}
           position={"absolute"}
           top={0}
           left={0}
-          loading={"lazy"}
-        />
+        >
+          <Image
+            src={astronautPic}
+            alt={"Astronaut"}
+            // objectFit={"contain"}
+            loading={"lazy"}
+          />
+        </Box>
       </Box>
     </Stack>
   );
