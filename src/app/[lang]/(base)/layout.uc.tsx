@@ -84,6 +84,7 @@ export default function BaseLayout({
                     src={getFlagImageLink(lang)}
                     alt={lang}
                     loading={"lazy"}
+                    boxSize={6}
                   />
                 }
               >
@@ -108,6 +109,7 @@ export default function BaseLayout({
                             src={getFlagImageLink(locale)}
                             alt={locale}
                             loading={"lazy"}
+                            boxSize={6}
                           />
                         }
                         rounded={"sm"}

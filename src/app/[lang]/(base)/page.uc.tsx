@@ -100,9 +100,6 @@ export default function Home({
             ))
           )}
           <Box
-            h={10}
-            rounded={10}
-            overflow={"hidden"}
             _hover={{ opacity: 0.8 }}
             transition={"opacity 0.2s ease-in-out"}
           >
@@ -114,7 +111,12 @@ export default function Home({
               <img
                 src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg"
                 alt="DigitalOcean Referral Badge"
-                style={{ height: "100%", width: "auto" }}
+                // style={{ height: "100%", width: "auto" }}
+                style={{
+                  height: "2.5rem",
+                  width: "auto",
+                  borderRadius: "9px",
+                }}
               />
             </a>
           </Box>
